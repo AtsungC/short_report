@@ -1,0 +1,324 @@
+\documentclass[]{elsarticle} %review=doublespace preprint=single 5p=2 column
+%%% Begin My package additions %%%%%%%%%%%%%%%%%%%
+\usepackage[hyphens]{url}
+
+
+
+\usepackage{lineno} % add
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\usepackage{graphicx}
+%%%%%%%%%%%%%%%% end my additions to header
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \usepackage{fontspec}
+  \ifxetex
+    \usepackage{xltxtra,xunicode}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\fi
+% use microtype if available
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+\bibliographystyle{elsarticle-harv}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={},
+            pdftitle={Short report},
+            colorlinks=false,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+
+\setcounter{secnumdepth}{0}
+% Pandoc toggle for numbering sections (defaults to be off)
+\setcounter{secnumdepth}{0}
+
+% Pandoc citation processing
+
+% Pandoc header
+
+
+
+\begin{document}
+\begin{frontmatter}
+
+  \title{Short report}
+    \author[]{Hsin}
+  
+      
+  \begin{abstract}
+  
+  \end{abstract}
+  
+ \end{frontmatter}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+In neuroscience research, behaviour analysis plays an important role in
+validating novel treatment. Depending on animal model and therapy,
+researchers choose various behaviour assessments to investigate
+effectiveness of medical interventions. Gait is one of the essential
+behaviour tests to examine mobility alteration in lysosomal storage
+disorders, such as Niemann-Pick diseases. There are automated systems,
+such as Catwalk (Noldus), that are able to collect and analyze gait data
+with minimized human effort. However, Catwalk system generates numerous
+variables which are around 300. Some scientists filter these variables
+via hypothesis-driven approach. This only investigates certain variables
+that are selected by researchers' assumption. Others merely reported
+significant results. Neither can provide objective judgment of the gait
+result, because selected variables were not represented the animal
+model. Here, we proposed a method of variable selection to avoid
+subjective conclusion. In order to distinguish relevant variables, the
+mixed ANOVA analysis is introduced. The method is considered individual
+subjects, age and group of a animal model effects on a study. This can
+construct growth curve in wild type group and disease progression in
+individual variable. In other words, the mixed ANOVA model identifies
+variables which are significant different between growth curve and
+disease progression. Thereafter, animal model will have its unique
+variable profile. The resulted profile is according to animal model,
+which means the selection process can provide a set of variables
+tailoring to specific disease studies. The treatment can be inspected in
+these variables which are affected by a disease. Instead, researchers
+utilized biased variable selection. Interpretation of behavioral study
+for inexperienced researchers is a challenging task and involved largely
+personal judgment. A summarized result of assessments can help scientist
+to determine the effect of treatment on animal model. We proposed a
+consultation group of machine learning algorithms in order to provide a
+unbiased conclusion. In this project, five classic classifiers, such as
+K-Nearest Neighbors(KNN), Naive Bayes, Decision Tree, Logistic
+Regression, and Support Vector Machines(SVM) were demonstrated the
+consultation group concept. These algorithms indicate the likelihood of
+behaviours between treated group and neither wild-type or disease
+groups. These results will be the reference for researchers to make a
+conclusion.
+
+\#20/09/2021 meeting In tanganil treatment study, 9 week of NPC mice,
+negative control group, lacked of gait data because of poor paw
+detection. This brought a challenging task to analyze the effectiveness
+of one week treatment from 8 week to 9 week. A method of two stages of
+analysis was proposed to deal with this dataset. First Mixed anova is to
+select relevant variables and followed by t-test. With selected
+variables, t-test is conducted to compare treated group and wild-type
+group at 9 week. In the result, the non-significant variables indicates
+that the one week treatment benefits in these behavioural aspects and
+vice versa. To rephrase it, this analysis is to investigate whether the
+treatment can alter disease progression towards wild-type feathers while
+by-passing the negative group comparison.
+
+\hypertarget{methods}{%
+\section{Methods}\label{methods}}
+
+\hypertarget{tanganil-treament}{%
+\subsubsection{Tanganil treament}\label{tanganil-treament}}
+
+There were three groups, such as wild-type, NPC and treated groups. The
+behaviour data were collected one week apart between age of 6 week old
+and 8 week. The treatment was introduced at 8 week of homozygous mice.
+
+\hypertarget{programming-environment}{%
+\subsubsection{Programming environment}\label{programming-environment}}
+
+R version : 4.0.3 library : ANOVA analysis : tydiverse, nlme packages
+Machine learning algorithms : caret, DoMc packages
+
+\hypertarget{mixed-anova-model}{%
+\subsubsection{Mixed ANOVA model}\label{mixed-anova-model}}
+
+In order to determine the relevant variables which are affected by
+disease, data with wild type and disease groups in different time points
+was analyzed by mixed ANOVA model. This can indicate the difference
+between growth curve and disease procession. nlme package in R was
+applied in here.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(nlme)}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\NormalTok{gait_data=nlme}\OperatorTok{::}\KeywordTok{groupedData}\NormalTok{(}\DataTypeTok{from=}\NormalTok{Y}\OperatorTok{~}\DecValTok{1}\OperatorTok{|}\NormalTok{ID,}\DataTypeTok{data=}\NormalTok{gait_data)}
+\KeywordTok{aov}\NormalTok{(}\DataTypeTok{data=}\NormalTok{gait_data,Y}\OperatorTok{~}\NormalTok{Age}\OperatorTok{*}\NormalTok{Group}\OperatorTok{+}\KeywordTok{Error}\NormalTok{(ID)) }
+\CommentTok{# mixed aov : repeated measures and various time points}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{itemize}
+\tightlist
+\item
+  gait\_data= the data generated from Catwalk system
+\item
+  Y= one of variables from gait\_data
+\end{itemize}
+
+\hypertarget{t-test-analysis}{%
+\subsubsection{T-test analysis}\label{t-test-analysis}}
+
+In the second stage, t-test is for comparing treated and wild-type
+groups in resulted variables from mixed ANOVA model. The programming
+code is described below :
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{f <-}\StringTok{ }\KeywordTok{var.test}\NormalTok{(}\StringTok{'wild-type data'}\NormalTok{,}\StringTok{'NPC data'}\NormalTok{,}
+              \DataTypeTok{ratio =} \DecValTok{1}\NormalTok{,}\DataTypeTok{alternative =} \StringTok{'two.sided'}\NormalTok{,}
+              \DataTypeTok{na.action=}\KeywordTok{na.omit}\NormalTok{())}
+\CommentTok{# variance test before t-test}
+
+\ControlFlowTok{if}\NormalTok{(}\OperatorTok{!}\KeywordTok{is.na}\NormalTok{(}\StringTok{'result_var.test'}\NormalTok{)\{}
+  \KeywordTok{ifelse}\NormalTok{(}\StringTok{'result_var.test'}\OperatorTok{>=}\FloatTok{0.05}\NormalTok{,}
+\NormalTok{         t <-}\StringTok{ }\KeywordTok{t.test}\NormalTok{(}\StringTok{'wild-type data'}\NormalTok{,}\StringTok{'NPC data'}\NormalTok{,}
+                     \DataTypeTok{var.equal =}\NormalTok{ T,}\DataTypeTok{alternative =} \StringTok{'two.sided'}\NormalTok{,}
+                     \DataTypeTok{mu=}\DecValTok{0}\NormalTok{,}\DataTypeTok{na.action=}\KeywordTok{na.omit}\NormalTok{()),}
+\NormalTok{         t <-}\KeywordTok{t.test}\NormalTok{(}\StringTok{'wild-type data'}\NormalTok{,}\StringTok{'NPC data'}\NormalTok{,}
+                     \DataTypeTok{var.equal =}\NormalTok{ F,}\DataTypeTok{alternative =} \StringTok{'two.sided'}\NormalTok{,}
+                     \DataTypeTok{mu=}\DecValTok{0}\NormalTok{,}\DataTypeTok{na.action=}\KeywordTok{na.omit}\NormalTok{()))}
+\CommentTok{# use t-test according to the result of variance test.}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{machine-learning-algorithms}{%
+\subsubsection{Machine Learning
+Algorithms}\label{machine-learning-algorithms}}
+
+The data from wild-type and disease groups were fed to machine learning
+algorithms. The mixed ANOVA analysis is regarded as features selection
+process. The selected variables were to train the classifiers. The
+training and 5 fold cross validation were executed by CARET package in
+R.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\KeywordTok{library}\NormalTok{(caret) }
+\KeywordTok{library}\NormalTok{(doMC) }
+
+\NormalTok{fitControl <-}\StringTok{ }\KeywordTok{trainControl}\NormalTok{(}
+  \DataTypeTok{method =} \StringTok{'repeatedcv'}\NormalTok{,}\DataTypeTok{number =} \DecValTok{5}\NormalTok{,}
+  \DataTypeTok{savePredictions =} \StringTok{'final'}\NormalTok{,        }
+  \CommentTok{# save prediction for optimal tuning parameter     }
+  \DataTypeTok{classProbs=}\NormalTok{T,                     }
+  \CommentTok{# class probabilities}
+  \DataTypeTok{summaryFunction=}\NormalTok{twoClassSummary,  }
+  \CommentTok{# results binary classes summary function}
+  \DataTypeTok{allowParallel =}\NormalTok{ T                 }
+  \CommentTok{# multiple cores paralleling calculation}
+\NormalTok{                           )}
+\NormalTok{model_selected <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{'regLogistic'}\NormalTok{,}\StringTok{'naive_bayes'}\NormalTok{,}
+                    \StringTok{'glm'}\NormalTok{,}\StringTok{'xgbTree'}\NormalTok{,}\StringTok{'knn'}\NormalTok{)}
+  \CommentTok{# five classifiers selected}
+\NormalTok{ml_list <-}\StringTok{ }\KeywordTok{list}\NormalTok{()}
+  \CommentTok{# a list to store model result}
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\OperatorTok{:}\KeywordTok{length}\NormalTok{(model_selected)) \{}
+\NormalTok{  ml_list[[i]] <-}\StringTok{ }
+\StringTok{    }\NormalTok{caret}\OperatorTok{::}\KeywordTok{train}\NormalTok{(Group}\OperatorTok{~}\NormalTok{.,}
+    \DataTypeTok{data=}\NormalTok{trainData,}\DataTypeTok{method=}\NormalTok{model_selected[[i]],}
+    \DataTypeTok{trControl=}\NormalTok{fitControl,}\DataTypeTok{tuneLength=}\DecValTok{5}\NormalTok{,}\DataTypeTok{metric=}\StringTok{'ROC'}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{itemize}
+\tightlist
+\item
+  fitControl = the setting of 5 folds cross validation
+\item
+  model\_selected = the classifier chosen for this study
+\item
+  ml\_list = the result of the trained classifiers
+\end{itemize}
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+\begin{figure}
+\centering
+\includegraphics{report_Elsevier_files/figure-latex/mixed_aov-1.pdf}
+\caption{The heapmap of Mixed AOV result}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{report_Elsevier_files/figure-latex/t-test,-1.pdf}
+\caption{The result of t-test : red colour indicates the significant
+different between wild-type and treated group at ago of 9 week. blue
+colour shows opposite result. In here, the therapy benefits in blue
+variables}
+\end{figure}
+
+The two-stage method was demonstrated by tanganil one week treatment
+study. This was proposed to solve the problems of variable selection and
+absence of NPC data at age of 9 week. Wild-type and disease groups
+firstly was analyzed by mixed anova model. The relevant variables from
+Catwalk system were selected, Figure 1. These were represented the
+disease affected variables. Afterward, t-test between wild-type and
+treated groups at 9 week old was shown the benefits of tanganil in the
+NPC animal model, Figure 2.
+
+The unique variables profile was provided by mixed ANOVA, which mean the
+profile depends on the disease model. It was shown in heatmap. The
+colour codes are according to p-values of mixed ANOVA analysis.
+Classifiers which were trained by resulted data from mixed ANOVA model
+were K-Nearest Neighbors(KNN), Naive Bayes, Decision Tree, Logistic
+Regression, and Support Vector Machines(SVM). The
+
+
+\end{document}
+
